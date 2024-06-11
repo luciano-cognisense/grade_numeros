@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Matriz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Bem-vindo ao jogo da matriz! Clique em "Iniciar" para começar. Seu objetivo é clicar nos botões em ordem crescente de 1 a 49. Boa sorte!</p>
+            <button id="startButton">Iniciar</button>
+        </div>
+    </div>
+
+    <div id="game" class="hidden">
+        <div id="matrix" class="matrix"></div>
+    </div>
+
+    <div id="endPopup" class="popup hidden">
+        <div class="popup-content">
+            <p>Parabéns! Você concluiu o jogo em <span id="timeTaken"></span> segundos.</p>
+            <button id="restartButton">Recomeçar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
