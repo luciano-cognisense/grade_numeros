@@ -1,9 +1,12 @@
-body {
+html, body {
     margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    overflow: hidden;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
@@ -31,7 +34,7 @@ body {
     align-items: center;
 }
 
-button {
+button, select {
     padding: 10px 20px;
     margin-top: 20px;
     cursor: pointer;
@@ -39,12 +42,10 @@ button {
 
 .matrix {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    gap: 2px;
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
+    margin: 0;
 }
 
 .matrix button {
@@ -52,9 +53,10 @@ button {
     height: 100%;
     font-size: 1.5rem;
     cursor: pointer;
-    border: 1px solid #ddd;
+    border: 0;
     background-color: #fff;
     transition: background-color 0.3s;
+    box-sizing: border-box;
 }
 
 .matrix button.clicked {

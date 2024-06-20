@@ -6,11 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const game = document.getElementById('game');
     const matrix = document.getElementById('matrix');
     const timeTaken = document.getElementById('timeTaken');
-    let timer;
+    const matrixSizeSelect = document.getElementById('matrixSize');
     let startTime;
     let currentNumber = 1;
+    let matrixSize;
+    let gridSize;
 
     startButton.addEventListener('click', () => {
+        matrixSize = parseInt(matrixSizeSelect.value);
+        gridSize = Math.sqrt(matrixSize);
         popup.classList.add('hidden');
         game.classList.remove('hidden');
         startGame();
@@ -18,13 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     restartButton.addEventListener('click', () => {
         endPopup.classList.add('hidden');
-        game.classList.remove('hidden');
-        startGame();
+        popup.classList.remove('hidden');
+        resetGame();
     });
 
     function startGame() {
         matrix.innerHTML = '';
-        const numbers = shuffle(Array.from({ length: 49 }, (_, i) => i + 1));
+        matrix.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
+        matrix.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
+        const numbers = shuffle(Array.from({ length: matrixSize }, (_, i) => i + 1));
         numbers.forEach(number => {
             const button = document.createElement('button');
             button.textContent = number;
@@ -40,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
             button.classList.add('clicked');
             button.disabled = true;
             currentNumber++;
-            if (currentNumber > 49) {
+            if (currentNumber > matrixSize) {
                 endGame();
             }
         }
@@ -52,6 +58,11 @@ document.addEventListener("DOMContentLoaded", () => {
         timeTaken.textContent = totalTime;
         game.classList.add('hidden');
         endPopup.classList.remove('hidden');
+    }
+
+    function resetGame() {
+        game.classList.add('hidden');
+        matrix.innerHTML = '';
     }
 
     function shuffle(array) {

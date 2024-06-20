@@ -9,7 +9,14 @@
 <body>
     <div id="popup" class="popup">
         <div class="popup-content">
-            <p>Bem-vindo ao jogo da matriz! Clique em "Iniciar" para começar. Seu objetivo é clicar nos botões em ordem crescente de 1 a 49. Boa sorte!</p>
+            <p>Bem-vindo ao jogo da matriz! Escolha o tamanho da matriz e clique em "Iniciar" para começar.</p>
+            <select id="matrixSize">
+                <option value="16">16 (4x4)</option>
+                <option value="25">25 (5x5)</option>
+                <option value="36">36 (6x6)</option>
+                <option value="49">49 (7x7)</option>
+                <option value="64">64 (8x8)</option>
+            </select>
             <button id="startButton">Iniciar</button>
         </div>
     </div>
