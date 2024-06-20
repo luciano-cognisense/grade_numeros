@@ -6,7 +6,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow: auto;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
@@ -46,6 +46,7 @@ button, select {
     height: 100vh;
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 .matrix button {
@@ -53,7 +54,7 @@ button, select {
     height: 100%;
     font-size: 1.5rem;
     cursor: pointer;
-    border: 0;
+    border: 1px solid #ddd;
     background-color: #fff;
     transition: background-color 0.3s;
     box-sizing: border-box;
