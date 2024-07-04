@@ -1,50 +1,51 @@
 {
-  "name": "Jogo da Matriz",
-  "short_name": "JogoMatriz",
-  "start_url": "/index.html",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
-  "icons": [
-    {
-      "src": "icon/lowres.webp",
-      "sizes": "48x48",
-      "type": "image/webp"
-    },
-    {
-      "src": "icon/lowres.png",
-      "sizes": "48x48",
-      "type": "image/png"
-    },
-    {
-      "src": "icon/hd_hi.png",
-      "sizes": "72x72",
-      "type": "image/png",
-      "density": "2.0"
-    },
-    {
-      "src": "icon/hd_hi.png",
-      "sizes": "96x96",
-      "type": "image/png",
-      "density": "2.0"
-    },
-    {
-      "src": "icon/hd_hi.png",
-      "sizes": "144x144",
-      "type": "image/png",
-      "density": "2.0"
-    },
-    {
-      "src": "icon/hd_hi.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "density": "2.0"
-    },
-    {
-      "src": "icon/hd_hi.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "density": "2.0"
-    }
-  ]
-}
+    "name": "Jogo da Matriz",
+    "short_name": "JogoMatriz",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+      {
+        "src": "icon/lowres.webp",
+        "sizes": "48x48",
+        "type": "image/webp"
+      },
+      {
+        "src": "icon/lowres.png",
+        "sizes": "48x48",
+        "type": "image/png"
+      },
+      {
+        "src": "icon/hd_hi.png",
+        "sizes": "72x72",
+        "type": "image/png",
+        "density": "2.0"
+      },
+      {
+        "src": "icon/hd_hi.png",
+        "sizes": "96x96",
+        "type": "image/png",
+        "density": "2.0"
+      },
+      {
+        "src": "icon/hd_hi.png",
+        "sizes": "144x144",
+        "type": "image/png",
+        "density": "2.0"
+      },
+      {
+        "src": "icon/hd_hi.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "density": "2.0"
+      },
+      {
+        "src": "icon/hd_hi.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "density": "2.0"
+      }
+    ]
+  }
+  
