@@ -1,0 +1,24 @@
+{
+  "name": "Jogo da Matriz",
+  "short_name": "JogoMatriz",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "icon/lowres.webp",
+      "sizes": "48x48",
+      "type": "image/webp"
+    },
+    {
+      "src": "icon/lowres",
+      "sizes": "48x48"
+    },
+    {
+      "src": "icon/hd_hi",
+      "sizes": "72x72",
+      "density": "2.0"
+    }
+  ]
+}
