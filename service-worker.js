@@ -5,9 +5,9 @@ const urlsToCache = [
   '/styles.css',
   '/script.js',
   '/manifest.json',
-  '/icon/lowres.png',
-  '/icon/hd_hi_72.png',
-  '/icon/hd_hi_96.png',
+  '/icons/lowres.png',
+  '/icons/hd_hi_72.png',
+  '/icons/hd_hi_96.png'
 ];
 
 // Instala o Service Worker e faz cache dos recursos necessários

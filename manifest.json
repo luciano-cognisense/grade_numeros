@@ -1,27 +1,25 @@
 {
     "name": "Jogo da Matriz",
     "short_name": "JogoMatriz",
-    "start_url": "/index.html",
+    "start_url": "index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
     "icons": [
       {
-        "src": "icon/lowres.png",
+        "src": "icons/lowres.png",
         "sizes": "48x48",
         "type": "image/png"
       },
       {
-        "src": "icon/hd_hi_72.png",
+        "src": "icons/hd_hi_72.png",
         "sizes": "72x72",
-        "type": "image/png",
-        "density": "2.0"
+        "type": "image/png"
       },
       {
-        "src": "icon/hd_hi_96.png",
+        "src": "icons/hd_hi_96.png",
         "sizes": "96x96",
-        "type": "image/png",
-        "density": "2.0"
+        "type": "image/png"
       }
     ]
   }
